@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Madrid CF</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background: #002F6C; /* Màu xanh của Real Madrid */
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #002F6C;
+            padding-bottom: 10px;
+        }
+
+        .gioi-thieu-content, .lich-thi-dau-content, .tin-tuc-content, .tai-tro-content, .lien-he-content, .highlight-content {
+            margin-top: 10px;
+        }
+
+        footer {
+            background: #002F6C;
+            color: #fff;
+            text-align: center;
+            padding: 0px 0; /* Tăng khoảng cách giữa các dòng */
+            position: fixed;
+            width: 100%;
+            bottom: 1;
+            font-size: 14px; /* Kích thước chữ nhỏ hơn */
+        }
+        .product {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h2 {
+            font-size: 24px;
+            color: #333;
+        }
+        .product p {
+            font-size: 18px;
+            color: #777;
+        }
+        .product .price {
+            font-size: 22px;
+            color: #e67e22;
+            margin: 10px 0;
+        }
+        .product button {
+            background-color: #e67e22;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .product button:hover {
+            background-color: #d35400;
+        }
+
+        footer p {
+            margin: 0px 0; /* Thêm khoảng cách giữa các đoạn văn */
+        }
+
+        .video-container {
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+        max-width: 100%;
+        background: #000;
+        margin-top: 10px;
+        }
+        .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        }
+        table {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            border-collapse: collapse;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        input[type="text"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        img{
+            text-align: center;
+            margin ;
+        }
+
+        
+
+        
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Real Madrid CF</h1>
+        <nav>
+            <ul>
+                <li><a href="#gioi-thieu">Giới Thiệu</a></li>
+                <li><a href="#lich-thi-dau">Lịch Thi Đấu</a></li>
+                <li><a href="#tin-tuc">Tin Tức</a></li>
+                <li><a href="#tai-tro">Tài Trợ và Đối Tác</a></li>
+                <li><a href="#highlight">Highlight</a></li>
+                <li><a href="#Fan-Zone">Fan Zone</a></li>
+                <li><a href="#Cửa-Hàng-Trực-Tuyến">Cửa Hàng Trực Tuyến</a></li>
+                <li><a href="#Thành-viên-CLB">Thành viên CLB </a></li>
+                <li><a href="#liên-hệ">liên hệ </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="gioi-thieu">
+            <h2>Giới Thiệu Câu Lạc Bộ</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" alt="Logo Real Madrid" style="width: 150px; height: auto;">
+            <div class="gioi-thieu-content">
+                <h3>Thông Tin Cơ Bản</h3>
+                <p>Real Madrid Club de Fútbol, thường được gọi là Real Madrid, là một câu lạc bộ bóng đá chuyên nghiệp có trụ sở tại Madrid, Tây Ban Nha. Được thành lập vào năm 1902, Real Madrid là một trong những câu lạc bộ thành công nhất trong lịch sử bóng đá, với nhiều danh hiệu quốc nội và châu lục.</p>
+                <h3>Sứ Mệnh và Tầm Nhìn</h3>
+                <p>Sứ mệnh của Real Madrid là duy trì vị trí hàng đầu trong bóng đá quốc tế và đóng góp tích cực cho sự phát triển của thể thao. Tầm nhìn của câu lạc bộ là trở thành biểu tượng toàn cầu của sự xuất sắc và tinh thần thể thao.</p>
+                <h3>Thành Tích và Danh Hiệu</h3>
+                <p>Real Madrid đã giành được 35 chức vô địch La Liga, 19 Cúp Nhà vua Tây Ban Nha, và 14 danh hiệu UEFA Champions League, là đội bóng có nhiều danh hiệu Champions League nhất trong lịch sử.</p>
+            </div>
+        </section>
+
+        <section id="lich-thi-dau">
+            <h2>Lịch Thi Đấu và Kết Quả</h2>
+            <div class="lich-thi-dau-content">
+                <h3>Lịch Thi Đấu</h3>
+                <p>Cập nhật lịch thi đấu các trận sắp diễn ra của Real Madrid.</p>
+                <h3>Kết Quả</h3>
+                <p>Hiển thị kết quả các trận đấu đã diễn ra cùng với thông tin chi tiết.</p>
+                <h3>Bảng Xếp Hạng</h3>
+                <p>Thông tin về vị trí của Real Madrid trong bảng xếp hạng La Liga và các giải đấu khác.</p>
+            </div>
+        </section>
+
+        <section id="tin-tuc">
+            <h2>Tin Tức và Bài Viết</h2>
+            <div class="tin-tuc-content">
+                <h3>Tin Tức Mới Nhất</h3>
+                <p>Cập nhật tin tức mới nhất về đội bóng, chuyển nhượng, và các hoạt động câu lạc bộ.</p>
+                <h3>Bài Viết Chuyên Sâu</h3>
+                <p>Phân tích chiến thuật, đánh giá phong độ cầu thủ, và bình luận sau trận đấu.</p>
+            </div>
+        </section>
+
+        <section id="tai-tro">
+            <h2>Tài Trợ và Đối Tác</h2>
+            <div class="tai-tro-content">
+                <h3>Đối Tác Chiến Lược</h3>
+                <p> 1. Orange: Đây là một công ty viễn thông có thỏa thuận hợp tác ba năm với Real Madrid. Orange trở thành đối tác viễn thông chính thức của cả đội bóng đá nam và nữ của Real Madrid, bao gồm quyền sử dụng hình ảnh, quyền tiếp đón, và có sự hiện diện nổi bật tại sân vận động Santiago Bernabéu​(
+                    Madridista ).</p><br/>
+                    <div class="img">
+                        <img src="https://sixthstreet.com/wp-content/uploads/2022/05/Preview-Image.jpg" style="width: 100%; height: 800px;" >   
+                        </div>          
+                <p>2. Sixth Street và Legends: Real Madrid đã ký kết hợp tác với Sixth Street, một công ty đầu tư và Legends, công ty chuyên về trải nghiệm cao cấp cho thể thao và địa điểm tổ chức sự kiện. Mục tiêu của thỏa thuận này là biến sân vận động Santiago Bernabéu thành một điểm đến hàng đầu về giải trí và thể thao. Real Madrid sẽ nhận được khoảng 360 triệu euro thông qua sự hợp tác này, và Sixth Street sẽ tham gia vào việc vận hành các doanh nghiệp mới tại sân Bernabéu trong 20 năm. Legends sẽ đóng góp kinh nghiệm trong việc quản lý và tối ưu hóa hoạt động của sân vận động​(
+                    Sixth Street
+                    ).</p>    
+                <h3>Quyền Lợi Tài Trợ</h3>
+                <p>Họ có thể sử dụng hình ảnh và thương hiệu của câu lạc bộ Real Madrid để quảng bá tiếp thị trên toàn cầu.
+                    Họ có thể tiếp cận đến một cộng đồng fan rất lớn trên toàn cầu.
+                    Nhà tài trợ thường được cung cấp các quyền lợi đặc biệt trong các sự kiện của Real Madrid, bao gồm vé VIP cho các trận đấu, cơ hội gặp gỡ cầu thủ, và các sự kiện độc quyền. 
+                    Liên kết với một câu lạc bộ bóng đá danh tiếng như Real Madrid giúp gia tăng giá trị và uy tín cho thương hiệu của nhà tài trợ để phát triển, quảng bá, mở rộng thị trường và tạo ra các cơ hội kinh doanh mới đến người hâm mộ và các đối tác với câu lạc bộ.  </p>
+            </div>
+        </section>
+
+        <section id="highlight">
+            <h2>Highlight Trận Đấu</h2>
+            <div class="highlight-content">
+                <h3>Video Highlight</h3>
+                <p>Xem lại những khoảnh khắc đáng nhớ trong các trận đấu gần đây của Real Madrid.</p>
+                <div class="video-container">
+                    <iframe src="https://www.youtube.com/embed/PjUyXSy5eUU" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+    </section>
+    <section id="Thành-viên-CLB"></section>
+    <h1>Đăng ký hội viên</h1>
+    <h3>Đăng ký hội viên để nhận thêm ưu đãi như vé xem trận đấu và tích điểm để đổi những phần quà vô cùng hấp dẫn</h3
+        >
+
+    <form action="/submit_survey" method="POST">
+        <table>
+            <tr>
+                <th colspan="2">Thông tin cá nhân</th>
+            </tr>
+            <tr>
+                <td>Họ và tên:</td>
+                <td><input type="text" name="fullname" required></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </section>
+        <section id="Cửa-Hàng-Trực-Tuyến"></section>
+        <h2>Cửa hàng trực tuyến</h2>
+        <div class="product">
+            <img src="https://assets.adidas.com/images/w_840,f_auto,q_auto,fl_lossy,c_fill,g_auto/78b62417f1e042aeb25e3353d278de3b_9366/Ao_DJau_San_Nha_Authentic_Real_Madrid_24-25_trang_IX8095_HM1.jpg" alt="Áo đấu sân nhà Authentic Real Madrid 24/25">
+            <h3>áo sân nhà realmadrid 24/25 authentic</h3>
+            <p>áo nam .</p>
+            <p class="price">3,000,000 VNĐ</p>
+            <button>Mua ngay</button>
+            <img src="https://file-cdn.sider.ai/file/U07GHK9RGVJ/8dbd5ed6f4bbf764ba354b81391a6d97/79b1023444d443d2aebc4d45c3f2b960-1726407023.jpg?Key-Pair-Id=K344F5VVSSM536&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9maWxlLWNkbi5zaWRlci5haS8qL1UwN0dISzlSR1ZKLyoiLCJDb25kaXRpb24iOnsiRGF0ZUxlc3NUaGFuIjp7IkFXUzpFcG9jaFRpbWUiOjE3Mjg5OTkwMjN9fX1dfQ__&Signature=CtKpmuaC7njan8G0Rm3mTLUDMbnJ8gPjFj~c03fycc26UVk-C1wu0tIlUrcPV6T1G~P6kV2wJftIQ4WE8l7ztVvvHVoAKWJqFZWbCGiefAvRX3fQylFpfzCKk6Uy0QbgZUSMYNybPTwqocepaqNJ93ygyzHITooKT19t-gtFfF-dIs-XRJ5sXzNwcvSRuedu4VoWBLed59yTQRJgtUWNGSPn23RMmvP6wxaCqFw16eYpUoRZ2cVJYMXdN3yrdCCprlZzO~zb0k7kgpJfeTjrN~XMvN~yPmXQZobuEF2TAahx~1QmvPzL9DG6FxZPMqYIIrV5fMEt~EfGuR7MN8ucZQ__" alt="Áo đấu sân nhà Authentic Real Madrid 24/25">
+            <h3>áo sân nhà realmadrid 24/25 authentic</h3>
+            <p>áo nữ .</p>
+            <p class="price">1,000,000 VNĐ</p>
+            <button>Mua ngay</button>
+                </div>
+            </div>
+    </section>
+    <section id="Fan-Zone"></section>
+    <h2>Khảo sát của fan-zone</h2>
+    <h3>ý kiến của bạn rất quan trọng để giúp chúng tôi phát triển thêm trong tương lai</h3>
+     <tr>
+        <td>Bạn hài lòng với dịch vụ của chúng tôi không?</td>
+        <td>
+            <select name="satisfaction">
+                <option value="rất hài lòng">Rất hài lòng</option>
+                <option value="hài lòng">Hài lòng</option>
+                <option value="bình thường">Bình thường</option>
+                <option value="không hài lòng">Không hài lòng</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td>Ý kiến đóng góp:</td>
+        <td><textarea name="feedback" rows="4" placeholder="Nhập ý kiến của bạn..."></textarea></td>
+    </tr>
+    <tr>
+        <td colspan="2" style="text-align: center;">
+            <input type="submit" value="Submit">
+        </td>
+    </tr>
+    </section>
+    <section id="liên-hệ">
+        <h2>Liên Hệ</h2>
+            <h3>&copy; 2024 Real Madrid CF. Tất cả quyền được bảo lưu.</p>
+            <p>SĐT: 0123456789</p>
+            <p>Email: realmadrid@gmail.com</p>
+    </section>
+        
+
+        
+    </main>
+</body>
+</html>
